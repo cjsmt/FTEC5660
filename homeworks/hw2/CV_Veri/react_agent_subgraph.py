@@ -13,11 +13,11 @@ class MessagesState(TypedDict, total=False):
 
 def build_react_agent_graph(llm: Any, tools: List[BaseTool], system_prompt: str):
     """
-    构建一个最小 ReAct 子图：
-    - state: {"messages": [...]}
-    - llm 节点：根据 messages 生成下一条 AIMessage（可带 tool_calls）
-    - tool 节点：根据最近一次 AIMessage 中的 tool_calls 调用 MCP 工具，并把 ToolMessage 加回 messages
-    在外层通过重复调用 llm_node -> tool_node 的方式实现多轮 ReAct。
+    Build a minimal ReAct-style subgraph:
+    - state: {\"messages\": [...]}
+    - llm node: generate the next AIMessage from messages (optionally with tool_calls)
+    - tool node: execute tool_calls from the latest AIMessage and append ToolMessages to messages
+    The outer controller calls llm_node -> tool_node repeatedly to realize multi-step ReAct behavior.
     """
     llm_with_tools = llm.bind_tools(tools)
 
@@ -25,8 +25,8 @@ def build_react_agent_graph(llm: Any, tools: List[BaseTool], system_prompt: str)
         messages = state.get("messages", [])
         if not messages:
             messages = [SystemMessage(content=system_prompt)]
-        # LLM 只看当前 messages
-        ai_message = await llm_with_tools.ainvoke(messages)  # 这里用同步 invoke，llm 本身可以是异步封装
+        # LLM only sees the current messages
+        ai_message = await llm_with_tools.ainvoke(messages)
         messages.append(ai_message)
         return {"messages": messages}
 
@@ -37,7 +37,7 @@ def build_react_agent_graph(llm: Any, tools: List[BaseTool], system_prompt: str)
 
         last = messages[-1]
         if not isinstance(last, AIMessage) or not getattr(last, "tool_calls", None):
-            # 没有 tool_calls，直接结束
+            # No tool_calls -> nothing to do here
             return {"messages": messages}
 
         tool_by_name = {t.name: t for t in tools}
@@ -56,9 +56,14 @@ def build_react_agent_graph(llm: Any, tools: List[BaseTool], system_prompt: str)
             tool = tool_by_name[name]
             result = await tool.ainvoke(args)
             tool_call_id = getattr(tc, "id", None) or (tc.get("id") if isinstance(tc, dict) else None)
+            content = result
+            if isinstance(content, list) and content and isinstance(content[0], dict) and "text" in content[0]:
+                content = content[0]["text"]
+            elif not isinstance(content, str):
+                content = str(content)
             new_messages.append(
                 ToolMessage(
-                    content=str(result),
+                    content=content,
                     tool_call_id=tool_call_id,
                 )
             )
@@ -71,8 +76,7 @@ def build_react_agent_graph(llm: Any, tools: List[BaseTool], system_prompt: str)
 
     builder.add_edge(START, "llm")
     builder.add_edge("llm", "tools")
-    # 不直接连到 END，由外层控制迭代次数和终止条件
-    # builder.add_edge("tools", "llm")
+    # We intentionally do not connect \"tools\" back to END here; the outer controller
+    # is responsible for iterating and deciding termination conditions.
 
-    # 注意：这里不 compile 成带 END 的完整图，而是留给外层控制流
     return builder.compile()

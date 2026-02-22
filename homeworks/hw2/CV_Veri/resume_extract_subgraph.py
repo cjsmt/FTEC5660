@@ -1,5 +1,5 @@
 """
-简历提取子图：PDF 路径 → PyPDF2 提取原文 → LLM 结构化为 ResumeData。
+Resume extraction subgraph: PDF path → PyPDF2 text extraction → LLM → structured ResumeData.
 """
 from __future__ import annotations
 
@@ -21,13 +21,13 @@ class ResumeExtractState(TypedDict, total=False):
 
 def _extract_text_from_pdf(pdf_path: str | Path) -> str:
     """
-    使用 PyPDF2 从 PDF 提取纯文本，按页拼接。
+    Use PyPDF2 to extract plain text from a PDF, concatenated page by page.
     """
     from PyPDF2 import PdfReader
 
     pdf_path = Path(pdf_path)
     if not pdf_path.exists():
-        raise FileNotFoundError(f"PDF 不存在: {pdf_path}")
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
 
     reader = PdfReader(str(pdf_path))
     parts = []
@@ -40,13 +40,13 @@ def _extract_text_from_pdf(pdf_path: str | Path) -> str:
 
 def build_resume_extract_graph(llm: Any, system_prompt: str):
     """
-    构建简历提取子图：extract_pdf_text → llm_to_resume_data → END
-    llm: 用于将 PDF 原文结构化为 JSON 的模型
-    system_prompt: 规定输出为 ResumeData JSON 的系统提示
+    Build the resume-extraction subgraph: extract_pdf_text → llm_to_resume_data → END
+    llm: model used to turn the PDF text into structured JSON
+    system_prompt: instructions that define the ResumeData JSON format
     """
 
     def node_extract_pdf_text(state: ResumeExtractState) -> ResumeExtractState:
-        """用 PyPDF2 从 PDF 提取原文，写入 state.ocr_text。"""
+        """Extract raw text from the PDF with PyPDF2 and store it in state.ocr_text."""
         path = state.get("resume_path")
         if not path:
             return state
@@ -55,19 +55,20 @@ def build_resume_extract_graph(llm: Any, system_prompt: str):
             state["ocr_text"] = raw_text
             return state
         except Exception as e:
-            state["ocr_text"] = f"[PDF 提取失败] {e}"
+            state["ocr_text"] = f"[PDF extraction failed] {e}"
             return state
 
     def node_llm_to_resume_data(state: ResumeExtractState) -> ResumeExtractState:
-        """根据 PDF 原文与 system_prompt，用 LLM 生成并解析为 ResumeData JSON。"""
+        """Given PDF text and system_prompt, use the LLM to produce ResumeData JSON."""
         ocr_text = state.get("ocr_text") or ""
         if not ocr_text or ocr_text.startswith("["):
             return state
 
         user_prompt = (
-            "请根据以下从简历 PDF 中提取的原文，抽取结构化信息并输出符合规定格式的 JSON。\n\n"
-            f"--- PDF 原文 ---\n{ocr_text}\n\n"
-            "--- 请只输出上述格式的 JSON，不要其他说明 ---"
+            "Please read the following text extracted from a resume PDF, "
+            "and extract structured information according to the required JSON format.\n\n"
+            f"--- PDF raw text ---\n{ocr_text}\n\n"
+            "--- Output only a single JSON object in the specified format, with no extra explanations. ---"
         )
 
         try:

@@ -1,32 +1,47 @@
 from __future__ import annotations
 
+import asyncio
 import os
-from typing import Dict, List, Any
+from typing import Dict, List
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_core.tools import BaseTool
-import asyncio
 
 
 MCP_BASE_URL = os.getenv("MCP_BASE_URL", "https://ftec5660.ngrok.app/mcp")
 
+# Retry config for MCP connection (often flaky with ngrok)
+MCP_LOAD_RETRIES = 3
+MCP_LOAD_RETRY_DELAY = 2.0
+
 
 async def load_mcp_tools() -> Dict[str, List[BaseTool]]:
     """
-    通过 MultiServerMCPClient 从 MCP 服务器加载所有工具，
-    并按名字拆成 LinkedIn / Facebook 两组，供 graph.py 使用。
+    Load all tools from the MCP server via MultiServerMCPClient
+    and split them into LinkedIn / Facebook groups for use in graph.py.
+    Retries up to MCP_LOAD_RETRIES times on connection failure.
     """
     client = MultiServerMCPClient(
         {
             "social_graph": {
                 "transport": "http",
                 "url": MCP_BASE_URL,
-                "headers": {"ngrok-skip-browser-warning": "true"}
+                "headers": {"ngrok-skip-browser-warning": "true"},
             }
         }
     )
 
-    tools = await client.get_tools()  # List[BaseTool]
+    last_error = None
+    for attempt in range(1, MCP_LOAD_RETRIES + 1):
+        try:
+            tools = await client.get_tools()
+            break
+        except Exception as e:
+            last_error = e
+            if attempt < MCP_LOAD_RETRIES:
+                await asyncio.sleep(MCP_LOAD_RETRY_DELAY)
+            else:
+                raise last_error
 
     by_name = {t.name: t for t in tools}
 
