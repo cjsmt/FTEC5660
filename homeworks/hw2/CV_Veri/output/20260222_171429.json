@@ -1,0 +1,1539 @@
+{
+  "reports": [
+    {
+      "filename": "CV_1.pdf",
+      "report": {
+        "resume": {
+          "name": "John Smith",
+          "city": "Singapore",
+          "country": "Singapore",
+          "hometown": "Kowloon",
+          "headline": "Marketing Professional",
+          "skills": [
+            {
+              "name": "Content Creation",
+              "proficiency": null
+            },
+            {
+              "name": "SEO",
+              "proficiency": null
+            },
+            {
+              "name": "Social Media",
+              "proficiency": null
+            }
+          ],
+          "experience": [
+            {
+              "company": "ByteDance",
+              "title": "Engineer",
+              "seniority": null,
+              "start_year": 2020,
+              "end_year": null,
+              "is_current": true
+            }
+          ],
+          "education": [
+            {
+              "school": "McGill University",
+              "degree": "Bachelor of Science",
+              "field": "Marketing",
+              "start_year": null,
+              "end_year": 2009
+            }
+          ],
+          "raw_text": "John Smith\nMarketing Professional\n♂¶ap-¶arker-altSingapore, Singapore/h⌢meKowloon\nExperience\nEngineer, ByteDance2020 – Present\n•Worked in a fast-paced, global technology environment.\n•Collaborated across teams to support large-scale platforms.\n•Applied analytical and problem-solving skills in production systems.\nEducation\nMcGill UniversityGraduated 2009\nBachelor of Science (BSc) in Marketing\nSkills\nContent Creation SEO Social Media\n1"
+        },
+        "linkedin_profile": {
+          "id": 9,
+          "name": "John Smith",
+          "headline": "Marketing Professional",
+          "city": "Singapore",
+          "country": "Singapore",
+          "industry": "Marketing",
+          "status": "student",
+          "years_experience": 7,
+          "summary": "Tax century group simple reveal. Democrat manage main oil recognize. Study cup discover drop whom collection manage.",
+          "skills": [
+            {
+              "name": "Content Creation",
+              "proficiency": 4
+            },
+            {
+              "name": "SEO",
+              "proficiency": 3
+            },
+            {
+              "name": "Social Media",
+              "proficiency": 3
+            }
+          ],
+          "experience": [
+            {
+              "company": "ByteDance",
+              "title": "Engineer",
+              "seniority": "mid",
+              "start_year": 2020,
+              "end_year": null,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "McGill University",
+              "degree": "BSc",
+              "field": "Marketing",
+              "start_year": 2005,
+              "end_year": 2009
+            }
+          ]
+        },
+        "facebook_profile": {
+          "id": 213,
+          "display_name": "John Smith",
+          "original_name": "John Smith",
+          "city": "Singapore",
+          "country": "Singapore",
+          "hometown": "Hong Kong",
+          "bio": "Evidence ago much.  Amount travel find consumer door near president",
+          "status": "Engaged",
+          "education": "Bachelor's Degree",
+          "current_job": "Scientist",
+          "current_company": "Traveloka",
+          "interests": "Machine Learning, Reading, Cooking",
+          "friend_count": 34,
+          "friends": [
+            205,
+            471,
+            9093,
+            2344,
+            247,
+            1738,
+            4778,
+            9391,
+            283,
+            368,
+            5105,
+            3283,
+            4022,
+            6903,
+            5177,
+            1755,
+            5628,
+            5629,
+            1075,
+            1636,
+            2271,
+            3616,
+            4956,
+            5196,
+            5592,
+            5836,
+            7124,
+            7201,
+            8027,
+            8355,
+            8577,
+            8733,
+            9176,
+            9770
+          ],
+          "posts": [
+            {
+              "id": 1199,
+              "content": "New personal best in Machine Learning! Progress feels amazing 💪"
+            },
+            {
+              "id": 1200,
+              "content": "Late night ramen cravings = satisfied 🌮"
+            },
+            {
+              "id": 1201,
+              "content": "Celebrating small wins today! 🎊"
+            },
+            {
+              "id": 1202,
+              "content": "Family dinner never gets old ❤️ #blessed"
+            },
+            {
+              "id": 1203,
+              "content": "Cousins gathering! Haven't seen everyone in ages! 👨‍👩‍👧‍👦"
+            }
+          ]
+        },
+        "skills_comparison": {
+          "score": 1.0,
+          "common_skills": [
+            {
+              "name": "Content Creation",
+              "proficiency": 4
+            },
+            {
+              "name": "SEO",
+              "proficiency": 3
+            },
+            {
+              "name": "Social Media",
+              "proficiency": 3
+            }
+          ],
+          "only_in_resume": [],
+          "only_in_social": [],
+          "summary": "Perfect match between resume and LinkedIn skills.",
+          "details": [
+            "All three skills from the resume (Content Creation, SEO, Social Media) are present in the LinkedIn profile with proficiency ratings.",
+            "Facebook profile does not list specific skills, so no comparison is possible there."
+          ]
+        },
+        "experience_comparison": {
+          "score": 0.5,
+          "common_experience": [
+            {
+              "company": "ByteDance",
+              "title": "Engineer",
+              "seniority": "mid",
+              "start_year": 2020,
+              "end_year": null,
+              "is_current": false
+            }
+          ],
+          "only_in_resume": [],
+          "only_in_social": [
+            {
+              "company": "Traveloka",
+              "title": "Scientist",
+              "seniority": null,
+              "start_year": null,
+              "end_year": null,
+              "is_current": true
+            }
+          ],
+          "summary": "Partial match with significant contradictions in current employment status.",
+          "details": [
+            "Both resume and LinkedIn show John Smith worked as an Engineer at ByteDance starting in 2020.",
+            "However, LinkedIn shows this position is not current, while the resume indicates it is current.",
+            "Facebook shows a completely different current job as a Scientist at Traveloka, which contradicts both resume and LinkedIn."
+          ]
+        },
+        "education_comparison": {
+          "score": 0.8,
+          "resume_education": [
+            {
+              "school": "McGill University",
+              "degree": "Bachelor of Science",
+              "field": "Marketing",
+              "start_year": null,
+              "end_year": 2009
+            }
+          ],
+          "social_education": [
+            {
+              "school": "McGill University",
+              "degree": "BSc",
+              "field": "Marketing",
+              "start_year": 2005,
+              "end_year": 2009
+            }
+          ],
+          "summary": "High consistency between resume and LinkedIn education, with minor degree format differences.",
+          "details": [
+            "Both resume and LinkedIn show a Bachelor's degree in Marketing from McGill University with graduation in 2009.",
+            "LinkedIn provides additional detail with start year 2005 and uses 'BSc' abbreviation instead of 'Bachelor of Science'.",
+            "Facebook only mentions 'Bachelor's Degree' without specifying school or field, limiting comparison."
+          ]
+        },
+        "summary": "The verification shows mixed results. While name, location, skills, and education show strong consistency between the resume and LinkedIn profile, there are significant contradictions in work experience. The resume claims current employment at ByteDance as an Engineer, but LinkedIn shows this position is not current, and Facebook shows a completely different current role as a Scientist at Traveloka. This suggests either the profiles belong to different individuals with the same name, or there is substantial misrepresentation in one or more sources. Further verification is recommended to resolve these employment discrepancies.",
+        "average_score": 0.7667
+      }
+    },
+    {
+      "filename": "CV_2.pdf",
+      "report": {
+        "resume": {
+          "name": "Minh Pham",
+          "city": "Beijing",
+          "country": "China",
+          "hometown": null,
+          "headline": "Design Professional",
+          "skills": [
+            {
+              "name": "UI/UX Design",
+              "proficiency": null
+            },
+            {
+              "name": "Prototyping",
+              "proficiency": null
+            },
+            {
+              "name": "Graphic Design",
+              "proficiency": null
+            }
+          ],
+          "experience": [
+            {
+              "company": "BCG",
+              "title": "Manager",
+              "seniority": null,
+              "start_year": 2022,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "Tencent",
+              "title": "Analyst",
+              "seniority": null,
+              "start_year": 2013,
+              "end_year": 2017,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "The University of Hong Kong",
+              "degree": "BSc",
+              "field": "Design",
+              "start_year": null,
+              "end_year": 2011
+            }
+          ],
+          "raw_text": "Minh Pham\nDesign Professional\nBeijing, China | Hong Kong\nProfessional Experience\nManager, BCG 2022 – Present\n•Led cross-functional teams on client-facing design initiatives.\n•Managed project timelines, deliverables, and stakeholder communication.\n•Applied design thinking to business and strategy problems.\nAnalyst, Tencent 2013 – 2017\n•Conducted market and product analysis to support decision-making.\n•Collaborated with design and engineering teams.\n•Produced reports and insights for senior leadership.\nEducation\nBSc in Design 2011\nThe University of Hong Kong\nSkills\n•UI/UX Design\n•Prototyping\n•Graphic Design\n1"
+        },
+        "linkedin_profile": {
+          "id": 47,
+          "name": "Minh Pham",
+          "headline": "Design Professional",
+          "city": "Beijing",
+          "country": "China",
+          "industry": "Design",
+          "status": "open_to_work",
+          "years_experience": 12,
+          "summary": "Choose reveal second allow evening authority. Difficult official already build onto. Between measure born feel reach. Subject later generation when.",
+          "skills": [
+            {
+              "name": "UI/UX",
+              "proficiency": 1
+            },
+            {
+              "name": "Prototyping",
+              "proficiency": 5
+            },
+            {
+              "name": "Graphic Design",
+              "proficiency": 1
+            }
+          ],
+          "experience": [
+            {
+              "company": "BCG",
+              "title": "Manager",
+              "seniority": "junior",
+              "start_year": 2022,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "Tencent",
+              "title": "Analyst",
+              "seniority": "junior",
+              "start_year": 2013,
+              "end_year": 2017,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "The University of Hong Kong",
+              "degree": "BSc",
+              "field": "Design",
+              "start_year": 2007,
+              "end_year": 2011
+            }
+          ]
+        },
+        "facebook_profile": {
+          "id": 70,
+          "display_name": "Minh Pham",
+          "original_name": "Minh Pham",
+          "city": "Beijing",
+          "country": "China",
+          "hometown": "Hong Kong",
+          "bio": "Discover last dream fall significant build soldier.  Must field time old which minute teach",
+          "status": "In a civil union",
+          "education": "Master's Degree",
+          "current_job": "Engineer",
+          "current_company": "Manulife",
+          "interests": "Machine Learning, Research, Music Production",
+          "friends": [
+            4865,
+            5515,
+            5901,
+            6679,
+            4762,
+            7967,
+            2082,
+            4273,
+            5430,
+            5309,
+            4160,
+            9030,
+            5318,
+            6219,
+            3661,
+            3406,
+            7635,
+            1108,
+            84,
+            7002,
+            3943,
+            5611,
+            242,
+            4345,
+            1916,
+            115,
+            533,
+            718,
+            844,
+            971,
+            973,
+            1049,
+            1128,
+            1968,
+            2462,
+            2890,
+            3082,
+            5295,
+            5504,
+            5737,
+            5827,
+            5967,
+            6560,
+            6699,
+            8461,
+            9300,
+            9795,
+            9817
+          ],
+          "posts": [
+            {
+              "id": 401,
+              "content": "Another year older, another year wiser 🥂"
+            },
+            {
+              "id": 402,
+              "content": "Hit a new gym milestone today! Consistency pays off 💪"
+            },
+            {
+              "id": 403,
+              "content": "2024 goals: Less stress, more Machine Learning"
+            },
+            {
+              "id": 404,
+              "content": "Networking event in Beijing last night. Made great connections!"
+            },
+            {
+              "id": 405,
+              "content": "Living my best life in Beijing! 🌟"
+            }
+          ]
+        },
+        "skills_comparison": {
+          "score": 0.9,
+          "common_skills": [
+            {
+              "name": "UI/UX Design",
+              "proficiency": 1
+            },
+            {
+              "name": "Prototyping",
+              "proficiency": 5
+            },
+            {
+              "name": "Graphic Design",
+              "proficiency": 1
+            }
+          ],
+          "only_in_resume": [],
+          "only_in_social": [],
+          "summary": "Skills are highly consistent between the resume and LinkedIn profile, with all three resume skills present on LinkedIn (though with slightly different naming for UI/UX). Facebook profile does not list specific skills.",
+          "details": [
+            "Resume lists 'UI/UX Design', LinkedIn lists 'UI/UX' (highly similar).",
+            "Resume and LinkedIn both list 'Prototyping' and 'Graphic Design'.",
+            "LinkedIn provides proficiency ratings (1-5) for these skills.",
+            "Facebook profile does not contain a skills section for comparison."
+          ]
+        },
+        "experience_comparison": {
+          "score": 0.7,
+          "common_experience": [
+            {
+              "company": "BCG",
+              "title": "Manager",
+              "seniority": "junior",
+              "start_year": 2022,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "Tencent",
+              "title": "Analyst",
+              "seniority": "junior",
+              "start_year": 2013,
+              "end_year": 2017,
+              "is_current": false
+            }
+          ],
+          "only_in_resume": [],
+          "only_in_social": [
+            {
+              "company": "Manulife",
+              "title": "Engineer",
+              "seniority": null,
+              "start_year": null,
+              "end_year": null,
+              "is_current": true
+            }
+          ],
+          "summary": "Work experience is perfectly consistent between the resume and LinkedIn profile. However, the Facebook profile shows a significant discrepancy, listing a current role as an 'Engineer' at 'Manulife' which conflicts with the resume's current 'Manager' role at 'BCG'.",
+          "details": [
+            "Resume and LinkedIn show identical work history: 'Manager at BCG (2022-Present)' and 'Analyst at Tencent (2013-2017)'.",
+            "LinkedIn adds seniority level 'junior' for both roles.",
+            "Facebook profile lists 'Current Job: Engineer' and 'Current Company: Manulife', which directly contradicts the resume and LinkedIn data."
+          ]
+        },
+        "education_comparison": {
+          "score": 0.6,
+          "resume_education": [
+            {
+              "school": "The University of Hong Kong",
+              "degree": "BSc",
+              "field": "Design",
+              "start_year": null,
+              "end_year": 2011
+            }
+          ],
+          "social_education": [
+            {
+              "school": "The University of Hong Kong",
+              "degree": "BSc",
+              "field": "Design",
+              "start_year": 2007,
+              "end_year": 2011
+            }
+          ],
+          "summary": "Education is consistent between the resume and LinkedIn profile (same school, degree, field, and graduation year). However, the Facebook profile lists a 'Master's Degree' with no other details, creating a partial mismatch.",
+          "details": [
+            "Resume and LinkedIn both show a 'BSc in Design' from 'The University of Hong Kong' with graduation in 2011.",
+            "LinkedIn provides a start year (2007) not present in the resume.",
+            "Facebook profile only states 'Education: Master's Degree', which conflicts with the BSc listed on the resume and LinkedIn."
+          ]
+        },
+        "summary": "The LinkedIn profile shows a very high degree of consistency with the resume across name, location, headline, skills, work experience, and education, strongly suggesting it belongs to the same person. However, the Facebook profile presents significant contradictions: it lists a different current job (Engineer at Manulife vs. Manager at BCG) and a different highest degree (Master's vs. BSc). This could indicate either a different person with the same name, an outdated Facebook profile, or fabricated resume information. Overall credibility is moderately high due to the strong LinkedIn match, but the Facebook discrepancies warrant further verification.",
+        "average_score": 0.7333
+      }
+    },
+    {
+      "filename": "CV_3.pdf",
+      "report": {
+        "resume": {
+          "name": "Wei Zhang",
+          "city": "Munich",
+          "country": "Germany",
+          "hometown": "Sydney",
+          "headline": "Consulting Professional",
+          "skills": [
+            {
+              "name": "Analytical Data Analysis",
+              "proficiency": null
+            },
+            {
+              "name": "Problem Solving",
+              "proficiency": null
+            },
+            {
+              "name": "Business Strategy",
+              "proficiency": null
+            },
+            {
+              "name": "PowerPoint",
+              "proficiency": null
+            }
+          ],
+          "experience": [
+            {
+              "company": "PwC",
+              "title": "Engineer",
+              "seniority": null,
+              "start_year": 2013,
+              "end_year": null,
+              "is_current": true
+            }
+          ],
+          "education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "BSc",
+              "field": "Consulting",
+              "start_year": null,
+              "end_year": 2015
+            }
+          ],
+          "raw_text": "Wei ZhangMunich, Germany\nConsulting Professional Sydney (Hometown)\nProfessional Experience\n2013 – PresentEngineer, PwC\n•Supported consulting engagements across multiple client\nprojects.\n•Performed data analysis to inform strategic recommen-\ndations.\n•Collaborated with cross-functional teams in a profes-\nsional services environment.\nEducation\n2015BSc in Consulting\nUniversity of Tokyo\nSkills\nAnalytical Data Analysis, Problem Solving\nBusiness Strategy, PowerPoint\n1"
+        },
+        "linkedin_profile": {
+          "id": 97,
+          "name": "Wei Zhang",
+          "headline": "Consulting Professional",
+          "city": "Munich",
+          "country": "Germany",
+          "industry": "Consulting",
+          "status": "hiring",
+          "years_experience": 15,
+          "summary": "Debate but be believe situation season. They with carry tough wide economy wind. Forward police professional scene whatever ever foreign able.",
+          "skills": [
+            {
+              "name": "Data Analysis",
+              "proficiency": 5
+            },
+            {
+              "name": "PowerPoint",
+              "proficiency": 5
+            },
+            {
+              "name": "Problem Solving",
+              "proficiency": 1
+            },
+            {
+              "name": "Strategy",
+              "proficiency": 5
+            }
+          ],
+          "experience": [
+            {
+              "company": "PwC",
+              "title": "Engineer",
+              "seniority": "junior",
+              "start_year": 2013,
+              "end_year": null,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "BSc",
+              "field": "Consulting",
+              "start_year": 2011,
+              "end_year": 2015
+            }
+          ]
+        },
+        "facebook_profile": {
+          "id": 97,
+          "display_name": "Wei Zhang",
+          "original_name": "Wei Zhang",
+          "city": "Munich",
+          "country": "Germany",
+          "hometown": "Munich",
+          "bio": "Living in Munich | Public Speaking enthusiast | Consulting",
+          "status": "Divorced",
+          "education": "Bachelor's Degree",
+          "current_job": "Engineer",
+          "current_company": "PwC",
+          "interests": "Public Speaking, Networking, Music Production, Concerts",
+          "friends": [
+            4868,
+            4359,
+            8976,
+            2193,
+            9875,
+            28,
+            3234,
+            1828,
+            3365,
+            678,
+            6954,
+            2864,
+            5424,
+            8625,
+            1717,
+            7997,
+            9022,
+            8384,
+            9026,
+            322,
+            455,
+            6873,
+            3301,
+            7272,
+            8943,
+            9970,
+            5236,
+            4340,
+            117,
+            3705,
+            600,
+            625,
+            1125,
+            1656,
+            2608,
+            2931,
+            2990,
+            5275,
+            5523,
+            6004,
+            6563,
+            6832,
+            7372,
+            7742,
+            7881,
+            8666,
+            8791,
+            9361,
+            9591
+          ],
+          "posts": [
+            {
+              "id": 551,
+              "content": "Family dinner never gets old ❤️ #blessed"
+            },
+            {
+              "id": 552,
+              "content": "Friday mood! Weekend plans? 🎉"
+            },
+            {
+              "id": 553,
+              "content": "That Monday feeling... need coffee ☕"
+            }
+          ]
+        },
+        "skills_comparison": {
+          "score": 0.8,
+          "common_skills": [
+            {
+              "name": "Problem Solving",
+              "proficiency": 1
+            },
+            {
+              "name": "PowerPoint",
+              "proficiency": 5
+            }
+          ],
+          "only_in_resume": [
+            {
+              "name": "Analytical Data Analysis",
+              "proficiency": null
+            },
+            {
+              "name": "Business Strategy",
+              "proficiency": null
+            }
+          ],
+          "only_in_social": [
+            {
+              "name": "Data Analysis",
+              "proficiency": 5
+            },
+            {
+              "name": "Strategy",
+              "proficiency": 5
+            }
+          ],
+          "summary": "Good alignment on core consulting skills with some variation in terminology.",
+          "details": [
+            "Resume 'Analytical Data Analysis' and LinkedIn 'Data Analysis' are highly similar, suggesting a match.",
+            "Resume 'Business Strategy' and LinkedIn 'Strategy' are conceptually equivalent.",
+            "Both 'Problem Solving' and 'PowerPoint' appear directly in both profiles.",
+            "Facebook does not provide a detailed skills list for comparison."
+          ]
+        },
+        "experience_comparison": {
+          "score": 0.9,
+          "common_experience": [
+            {
+              "company": "PwC",
+              "title": "Engineer",
+              "seniority": "junior",
+              "start_year": 2013,
+              "end_year": null,
+              "is_current": false
+            }
+          ],
+          "only_in_resume": [],
+          "only_in_social": [],
+          "summary": "Work experience is perfectly consistent across all sources.",
+          "details": [
+            "Company (PwC), job title (Engineer), and start year (2013) match exactly between Resume and LinkedIn.",
+            "Facebook 'current_job' and 'current_company' fields confirm the same role at PwC.",
+            "Minor discrepancy: LinkedIn marks the PwC role as 'is_current: false', while Resume marks it as 'is_current: true'. This could be a data freshness issue."
+          ]
+        },
+        "education_comparison": {
+          "score": 0.8,
+          "resume_education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "BSc",
+              "field": "Consulting",
+              "start_year": null,
+              "end_year": 2015
+            }
+          ],
+          "social_education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "BSc",
+              "field": "Consulting",
+              "start_year": 2011,
+              "end_year": 2015
+            }
+          ],
+          "summary": "Education details are highly consistent between Resume and LinkedIn.",
+          "details": [
+            "School (University of Tokyo), degree (BSc), major (Consulting), and graduation year (2015) match exactly.",
+            "LinkedIn provides a start year (2011) which is missing from the Resume.",
+            "Facebook only lists 'Bachelor's Degree', which is consistent but lacks detail."
+          ]
+        },
+        "summary": "The verification shows a high degree of consistency across all platforms. The core identity markers (name, location, current role at PwC, and education at the University of Tokyo) align perfectly. Minor discrepancies exist in skill terminology and the 'current job' status flag, but these are not significant enough to suggest a different person. The profiles are highly likely to belong to the same individual, Wei Zhang. The resume information appears very reliable.",
+        "average_score": 0.8333
+      }
+    },
+    {
+      "filename": "CV_4.pdf",
+      "report": {
+        "resume": {
+          "name": "Rahul Sharma",
+          "city": null,
+          "country": "Singapore",
+          "hometown": "Singapore",
+          "headline": "Legal Professional",
+          "skills": [
+            {
+              "name": "Compliance",
+              "proficiency": null
+            },
+            {
+              "name": "Litigation",
+              "proficiency": null
+            },
+            {
+              "name": "Contract Review",
+              "proficiency": null
+            },
+            {
+              "name": "Web3",
+              "proficiency": null
+            },
+            {
+              "name": "Machine Learning",
+              "proficiency": null
+            },
+            {
+              "name": "Quantum Computing",
+              "proficiency": null
+            }
+          ],
+          "experience": [
+            {
+              "company": "Microsoft",
+              "title": "Senior Engineer",
+              "seniority": "senior",
+              "start_year": 2021,
+              "end_year": 2027,
+              "is_current": false
+            },
+            {
+              "company": "StartupXYZ",
+              "title": "Consultant",
+              "seniority": null,
+              "start_year": 2020,
+              "end_year": 2023,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "Tsinghua University",
+              "degree": "PhD",
+              "field": "Legal Studies",
+              "start_year": 2021,
+              "end_year": null
+            }
+          ],
+          "raw_text": "Rahul Sharma\nLegal Professional\nSingapore (Hometown) | Singapore / Philippines\nProfessional Experience\n2021 – 2027Senior Engineer, Microsoft\n•Led compliance-focused initiatives within large-scale techni-\ncal teams.\n•Advised on regulatory, legal, and risk considerations for com-\nplex systems.\n•Worked at the intersection of law, technology, and gover-\nnance.\n2020 – 2023Consultant, StartupXYZ\n•Provided legal and strategic consulting for early-stage com-\npanies.\n•Supported contract review, compliance, and operational risk\nmanagement.\n•Engaged with cross-functional and international stakehold-\ners.\nEducation\n2021PhD in Legal Studies\nTsinghua University\nSkills\nCompliance, Litigation, Contract Review\nWeb3, Machine Learning, Quantum Computing\n1"
+        },
+        "linkedin_profile": {
+          "id": 3141,
+          "name": "Rahul Sharma",
+          "headline": "Software Professional",
+          "city": "Singapore",
+          "country": "Singapore",
+          "industry": "Software",
+          "status": "hiring",
+          "years_experience": 17,
+          "summary": "Total care change writer author. Little indicate culture significant employee mention. Onto source executive. Standard series wide heavy section.",
+          "skills": [
+            {
+              "name": "CI/CD",
+              "proficiency": 1
+            },
+            {
+              "name": "Java",
+              "proficiency": 5
+            },
+            {
+              "name": "Go",
+              "proficiency": 1
+            },
+            {
+              "name": "Python",
+              "proficiency": 5
+            }
+          ],
+          "experience": [
+            {
+              "company": "BCG",
+              "title": "Analyst",
+              "seniority": "junior",
+              "start_year": 2005,
+              "end_year": 2007,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "Harvard",
+              "degree": "MSc",
+              "field": "Software",
+              "start_year": 2012,
+              "end_year": 2015
+            }
+          ]
+        },
+        "facebook_profile": {
+          "id": 765,
+          "display_name": "Rahul Sharma",
+          "original_name": "Rahul Sharma",
+          "city": "Singapore",
+          "country": "Singapore",
+          "hometown": "Singapore",
+          "bio": "Inside still often other walk instead manage.  Management focus sort face degree most hold",
+          "status": "In a civil union",
+          "education": "Master's Degree",
+          "current_job": "Manager",
+          "current_company": "Shopee",
+          "interests": "Public Speaking, Networking, Photography",
+          "friends": [
+            83,
+            162,
+            211,
+            283,
+            3715,
+            4875,
+            654,
+            9486,
+            7061,
+            5529,
+            6813,
+            4010,
+            3637,
+            8127,
+            3007,
+            8132,
+            8005,
+            8788,
+            7252,
+            2022,
+            486,
+            5094,
+            2278,
+            3950,
+            8050,
+            2930,
+            4601,
+            8828,
+            2427,
+            2897,
+            3084,
+            3457,
+            3972,
+            4020,
+            4791,
+            4792,
+            4929,
+            5058,
+            5221,
+            6352,
+            6658,
+            7063,
+            7155,
+            7226,
+            7548,
+            8726,
+            9089
+          ],
+          "posts": [
+            {
+              "id": 4151,
+              "content": "Random acts of kindness make the world better ❤️"
+            },
+            {
+              "id": 4152,
+              "content": "What's everyone up to this weekend in Singapore?"
+            },
+            {
+              "id": 4153,
+              "content": "Throwback to my college days in Singapore. Time flies! 📸"
+            },
+            {
+              "id": 4154,
+              "content": "Travel goal for 2024: Finally visit Singapore! Who's been?"
+            },
+            {
+              "id": 4155,
+              "content": "Completed my certification in Photography! Never stop learning 📚"
+            },
+            {
+              "id": 4156,
+              "content": "Grateful for friends who feel like family 🙏"
+            },
+            {
+              "id": 4157,
+              "content": "Just finished binge-watching that new series. Mind blown! 🎬"
+            },
+            {
+              "id": 4158,
+              "content": "Grateful for the little things today 🌸"
+            }
+          ]
+        },
+        "skills_comparison": {
+          "score": 0.0,
+          "common_skills": [],
+          "only_in_resume": [
+            {
+              "name": "Compliance",
+              "proficiency": null
+            },
+            {
+              "name": "Litigation",
+              "proficiency": null
+            },
+            {
+              "name": "Contract Review",
+              "proficiency": null
+            },
+            {
+              "name": "Web3",
+              "proficiency": null
+            },
+            {
+              "name": "Machine Learning",
+              "proficiency": null
+            },
+            {
+              "name": "Quantum Computing",
+              "proficiency": null
+            }
+          ],
+          "only_in_social": [
+            {
+              "name": "CI/CD",
+              "proficiency": 1
+            },
+            {
+              "name": "Java",
+              "proficiency": 5
+            },
+            {
+              "name": "Go",
+              "proficiency": 1
+            },
+            {
+              "name": "Python",
+              "proficiency": 5
+            }
+          ],
+          "summary": "No overlap in skills between the resume and the LinkedIn profile. The resume emphasizes legal and advanced technology skills, while LinkedIn shows core software engineering skills.",
+          "details": [
+            "Resume skills are legal/compliance-focused (Compliance, Litigation, Contract Review) and futuristic tech (Web3, Quantum Computing).",
+            "LinkedIn skills are standard software development tools (Java, Python, Go, CI/CD).",
+            "The skill domains are completely different, indicating different professional profiles."
+          ]
+        },
+        "experience_comparison": {
+          "score": 0.0,
+          "common_experience": [],
+          "only_in_resume": [
+            {
+              "company": "Microsoft",
+              "title": "Senior Engineer",
+              "seniority": "senior",
+              "start_year": 2021,
+              "end_year": 2027,
+              "is_current": false
+            },
+            {
+              "company": "StartupXYZ",
+              "title": "Consultant",
+              "seniority": null,
+              "start_year": 2020,
+              "end_year": 2023,
+              "is_current": false
+            }
+          ],
+          "only_in_social": [
+            {
+              "company": "BCG",
+              "title": "Analyst",
+              "seniority": "junior",
+              "start_year": 2005,
+              "end_year": 2007,
+              "is_current": false
+            }
+          ],
+          "summary": "No common work experience found. The resume lists roles at Microsoft and StartupXYZ, while LinkedIn shows an earlier role at BCG. Facebook indicates a current role at Shopee, which is not mentioned in the resume.",
+          "details": [
+            "Resume claims Senior Engineer at Microsoft (2021-2027) and Consultant at StartupXYZ (2020-2023).",
+            "LinkedIn shows Analyst at BCG (2005-2007), which is much earlier and a different industry/role.",
+            "Facebook lists current job as Manager at Shopee, a company not mentioned in the resume or LinkedIn."
+          ]
+        },
+        "education_comparison": {
+          "score": 0.0,
+          "resume_education": [
+            {
+              "school": "Tsinghua University",
+              "degree": "PhD",
+              "field": "Legal Studies",
+              "start_year": 2021,
+              "end_year": null
+            }
+          ],
+          "social_education": [
+            {
+              "school": "Harvard",
+              "degree": "MSc",
+              "field": "Software",
+              "start_year": 2012,
+              "end_year": 2015
+            }
+          ],
+          "summary": "No match in education. The resume claims a PhD in Legal Studies from Tsinghua University (ongoing from 2021), while LinkedIn shows an MSc in Software from Harvard (2012-2015).",
+          "details": [
+            "Resume education: PhD in Legal Studies, Tsinghua University (started 2021).",
+            "LinkedIn education: MSc in Software, Harvard (2012-2015).",
+            "Different schools, degrees, fields, and timelines indicate completely different educational backgrounds."
+          ]
+        },
+        "summary": "The resume information shows significant and fundamental inconsistencies with the provided LinkedIn and Facebook profiles across all key areas: skills, work experience, and education. The name and location (Singapore) match, but the professional profiles are entirely different—the resume describes a legal professional with advanced tech interests, while LinkedIn shows a software engineer and Facebook suggests a managerial role at Shopee. Given the complete lack of overlap in professional details, it is highly likely these profiles belong to different individuals with the same name. The resume's credibility based on these social profiles is very low.",
+        "average_score": 0.0
+      }
+    },
+    {
+      "filename": "CV_5.pdf",
+      "report": {
+        "resume": {
+          "name": "Rahul Sharma",
+          "city": "London",
+          "country": null,
+          "hometown": "Hong Kong | Singapore",
+          "headline": "AI Professional",
+          "skills": [
+            {
+              "name": "Machine Learning & AI",
+              "proficiency": null
+            },
+            {
+              "name": "Advanced AI Systems",
+              "proficiency": null
+            },
+            {
+              "name": "Machine Learning (ML)",
+              "proficiency": null
+            },
+            {
+              "name": "Natural Language Processing (NLP)",
+              "proficiency": null
+            },
+            {
+              "name": "TensorFlow",
+              "proficiency": null
+            },
+            {
+              "name": "PyTorch",
+              "proficiency": null
+            },
+            {
+              "name": "Python",
+              "proficiency": null
+            }
+          ],
+          "experience": [
+            {
+              "company": "EY",
+              "title": "Senior Engineer",
+              "seniority": "senior",
+              "start_year": null,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "StartupXYZ",
+              "title": "Consultant",
+              "seniority": null,
+              "start_year": 2019,
+              "end_year": 2021,
+              "is_current": false
+            },
+            {
+              "company": "DataForge",
+              "title": "Senior Analyst",
+              "seniority": "senior",
+              "start_year": 2016,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "UrbanFlow",
+              "title": "Lead Scientist",
+              "seniority": "senior",
+              "start_year": 2010,
+              "end_year": 2017,
+              "is_current": false
+            }
+          ],
+          "education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "PhD",
+              "field": "Artificial Intelligence",
+              "start_year": null,
+              "end_year": 2012
+            }
+          ],
+          "raw_text": "Rahul Sharma\nAI Professional\nLondon | Hong Kong | Singapore (Hometown)\nCore Skills\nMachine Learning & AI\n•Advanced AI Systems\n•Machine Learning (ML)\n•Natural Language Processing (NLP)\nFrameworks & Tools\n•TensorFlow\n•PyTorch\n•Python\nEducation\nPhD in Artificial Intelligence\nUniversity of Tokyo\n2012Professional Experience\nSenior Engineer\nEYCurrent\n•Designed and evaluated AI-driven solutions for\nenterprise clients.\n•Applied ML techniques to large-scale business\nproblems.\nConsultant\nStartupXYZ 2019 – 2021\n•Provided AI and data strategy advisory to\nearly-stage companies.\nSenior Analyst\nDataForge 2016 – Present\n•Conducted advanced data analysis and model\nevaluation.\nLead Scientist\nUrbanFlow 2010 – 2017\n•Led research initiatives in applied AI systems.\n•Mentored junior researchers and engineers.\n1"
+        },
+        "linkedin_profile": {
+          "id": 12,
+          "name": "Rahul Sharma",
+          "headline": "Logistics Professional",
+          "city": "London",
+          "country": "UK",
+          "industry": "Logistics",
+          "status": "student",
+          "years_experience": 16,
+          "summary": "Themselves TV training PM the range. Possible police red throughout there change president car. Three at race last. Tv key interest city. Western quickly require lay continue claim believe. Day them answer.",
+          "skills": [
+            {
+              "name": "Inventory Management",
+              "proficiency": 2
+            },
+            {
+              "name": "Operations",
+              "proficiency": 2
+            },
+            {
+              "name": "Supply Chain",
+              "proficiency": 2
+            }
+          ],
+          "experience": [
+            {
+              "company": "PwC",
+              "title": "Manager",
+              "seniority": "mid",
+              "start_year": 2010,
+              "end_year": 2016,
+              "is_current": true
+            },
+            {
+              "company": "KPMG",
+              "title": "Engineer",
+              "seniority": "mid",
+              "start_year": 2021,
+              "end_year": 2027,
+              "is_current": true
+            }
+          ],
+          "education": [
+            {
+              "school": "KAIST",
+              "degree": "PhD",
+              "field": "Logistics",
+              "start_year": 2014,
+              "end_year": 2019
+            }
+          ]
+        },
+        "facebook_profile": {
+          "id": 12,
+          "display_name": "Rahul Sharma",
+          "original_name": "Rahul Sharma",
+          "city": "London",
+          "country": "UK",
+          "hometown": "London",
+          "bio": "Themselves TV training PM the range.  Possible police red throughout there change president car",
+          "status": "Divorced",
+          "education": "Doctoral Degree",
+          "current_job": "Manager",
+          "current_company": "PwC",
+          "interests": "Problem Solving, Operations Management, Digital Art, Photography",
+          "friends": [
+            1541,
+            4744,
+            3980,
+            269,
+            1170,
+            3092,
+            3093,
+            8729,
+            8988,
+            7458,
+            8484,
+            2213,
+            6139,
+            808,
+            9385,
+            4010,
+            8744,
+            427,
+            9522,
+            2745,
+            9273,
+            3143,
+            6730,
+            4049,
+            3178,
+            5866,
+            7027,
+            123,
+            127,
+            754,
+            903,
+            1274,
+            1436,
+            1482,
+            1938,
+            1980,
+            2299,
+            2382,
+            3674,
+            4161,
+            4317,
+            4394,
+            4440,
+            5133,
+            5941,
+            6192,
+            6369,
+            6504,
+            6862,
+            6894,
+            7671,
+            7730,
+            7811,
+            8031,
+            8996,
+            9100
+          ],
+          "posts": [
+            {
+              "id": 66,
+              "content": "Celebrating small wins today! 🎊"
+            },
+            {
+              "id": 67,
+              "content": "Found the best Vietnamese restaurant in London! Highly recommend 🍜"
+            },
+            {
+              "id": 68,
+              "content": "Cousins gathering! Haven't seen everyone in ages! 👨‍👩‍👧‍👦"
+            },
+            {
+              "id": 69,
+              "content": "Friday mood! Weekend plans? 🎉"
+            },
+            {
+              "id": 70,
+              "content": "Weekend getaway to London. Exactly what I needed! 🗺️"
+            },
+            {
+              "id": 71,
+              "content": "Missing the food in London already 😋"
+            },
+            {
+              "id": 72,
+              "content": "Working towards my goals, one step at a time 👣"
+            }
+          ]
+        },
+        "skills_comparison": {
+          "score": 0.0,
+          "common_skills": [],
+          "only_in_resume": [
+            {
+              "name": "Machine Learning & AI",
+              "proficiency": null
+            },
+            {
+              "name": "Advanced AI Systems",
+              "proficiency": null
+            },
+            {
+              "name": "Machine Learning (ML)",
+              "proficiency": null
+            },
+            {
+              "name": "Natural Language Processing (NLP)",
+              "proficiency": null
+            },
+            {
+              "name": "TensorFlow",
+              "proficiency": null
+            },
+            {
+              "name": "PyTorch",
+              "proficiency": null
+            },
+            {
+              "name": "Python",
+              "proficiency": null
+            }
+          ],
+          "only_in_social": [
+            {
+              "name": "Inventory Management",
+              "proficiency": 2
+            },
+            {
+              "name": "Operations",
+              "proficiency": 2
+            },
+            {
+              "name": "Supply Chain",
+              "proficiency": 2
+            }
+          ],
+          "summary": "No overlap in skills between the resume and the LinkedIn profile. The resume focuses on AI/ML, while LinkedIn shows logistics and supply chain skills.",
+          "details": [
+            "Resume lists 7 AI/ML and programming skills (e.g., Machine Learning, TensorFlow, Python).",
+            "LinkedIn profile lists 3 logistics/operations skills (Inventory Management, Operations, Supply Chain).",
+            "Facebook profile does not list specific skills, only general interests like 'Problem Solving' and 'Operations Management'."
+          ]
+        },
+        "experience_comparison": {
+          "score": 0.0,
+          "common_experience": [],
+          "only_in_resume": [
+            {
+              "company": "EY",
+              "title": "Senior Engineer",
+              "seniority": "senior",
+              "start_year": null,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "StartupXYZ",
+              "title": "Consultant",
+              "seniority": null,
+              "start_year": 2019,
+              "end_year": 2021,
+              "is_current": false
+            },
+            {
+              "company": "DataForge",
+              "title": "Senior Analyst",
+              "seniority": "senior",
+              "start_year": 2016,
+              "end_year": null,
+              "is_current": true
+            },
+            {
+              "company": "UrbanFlow",
+              "title": "Lead Scientist",
+              "seniority": "senior",
+              "start_year": 2010,
+              "end_year": 2017,
+              "is_current": false
+            }
+          ],
+          "only_in_social": [
+            {
+              "company": "PwC",
+              "title": "Manager",
+              "seniority": "mid",
+              "start_year": 2010,
+              "end_year": 2016,
+              "is_current": true
+            },
+            {
+              "company": "KPMG",
+              "title": "Engineer",
+              "seniority": "mid",
+              "start_year": 2021,
+              "end_year": 2027,
+              "is_current": true
+            }
+          ],
+          "summary": "No common work experience between the resume and LinkedIn. The resume shows AI/tech roles, while LinkedIn shows roles in professional services (PwC, KPMG).",
+          "details": [
+            "Resume lists 4 companies: EY, StartupXYZ, DataForge, UrbanFlow, all in AI/tech roles.",
+            "LinkedIn lists 2 companies: PwC (Manager) and KPMG (Engineer), with overlapping years but different industries.",
+            "Facebook lists current job as 'Manager' at 'PwC', matching LinkedIn but not the resume."
+          ]
+        },
+        "education_comparison": {
+          "score": 0.2,
+          "resume_education": [
+            {
+              "school": "University of Tokyo",
+              "degree": "PhD",
+              "field": "Artificial Intelligence",
+              "start_year": null,
+              "end_year": 2012
+            }
+          ],
+          "social_education": [
+            {
+              "school": "KAIST",
+              "degree": "PhD",
+              "field": "Logistics",
+              "start_year": 2014,
+              "end_year": 2019
+            }
+          ],
+          "summary": "Both profiles list a PhD, but from different universities and in different fields. The timeline also does not align.",
+          "details": [
+            "Resume: PhD in Artificial Intelligence from University of Tokyo, completed in 2012.",
+            "LinkedIn: PhD in Logistics from KAIST, from 2014 to 2019.",
+            "Facebook lists 'Doctoral Degree' but no specifics."
+          ]
+        },
+        "summary": "The resume and the provided social profiles show significant inconsistencies across all key areas, indicating they likely belong to different individuals with the same name. The resume portrays an AI professional with experience at tech/AI firms, while the LinkedIn profile describes a logistics professional with experience at PwC and KPMG. The only consistent points are the name 'Rahul Sharma' and the location 'London'. The credibility of the resume information based on these profiles is very low.",
+        "average_score": 0.0667
+      }
+    }
+  ],
+  "scores": [
+    0.7667,
+    0.7333,
+    0.8333,
+    0.0,
+    0.0667
+  ],
+  "evaluation": {
+    "decisions": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "correct": 5,
+    "total": 5,
+    "final_score": 1.0,
+    "threshold": 0.5
+  }
+}
