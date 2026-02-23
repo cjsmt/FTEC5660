@@ -60,6 +60,8 @@ You will see progress logs such as which CV is being processed and the `average_
 
 The system uses a **main graph** composed of three nodes, where two nodes internally invoke **subgraphs** for more complex logic.
 
+![CV Verification Pipeline Architecture](overall.png)
+
 ### Main Graph (`graph.py`)
 
 ```text
